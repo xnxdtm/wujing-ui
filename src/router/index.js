@@ -1,10 +1,16 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import MindMap from "@/views/MindMap";
 
 Vue.use(VueRouter)
 
 const routes = [
+  {
+    path: '/mindmap',
+    name: 'mindmap',
+    component: MindMap
+  },
   {
     path: '/',
     name: 'home',
