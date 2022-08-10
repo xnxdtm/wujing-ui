@@ -1,0 +1,5 @@
+export const getCategory =  '/wujing/category/getAll'
+export const getMindMapByCategoryId = '/wujing/mind-map/getByCategoryId'
+export const getNodeAnnotate = '/wujing/annotate/getByNodeId'
+export const changeMindMap = '/wujing/mind-map/update'
+export const changeAnnotate = '/wujing/annotate/insertOrUpdate'
