@@ -57,6 +57,11 @@ export default {
   methods: {
     initME() {
       this.ME = new MindElixir(this.MEOption)
+      if (!this.$store.state.mindMapData)
+        this.$store.state.mindMapData = {
+          "nodeData": {"id": "27cba6b127cd707e", "topic": "new topic", "root": true, "children": []},
+          "linkData": {}
+        }
       this.ME.init(this.$store.state.mindMapData)
       this.ME.bus.addListener('selectNode', node => {
         this.$axios.get(getNodeAnnotate + '?id=' + node.id)
